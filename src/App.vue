@@ -1,32 +1,83 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Nav/>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+import Nav from './components/Nav'
+  export default {
+    components: {
+      Nav
     }
   }
+</script>
+
+<style lang="scss">
+#app {
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+  $dmSans: 'DM Sans', sans-serif;
+
+  //colors 
+  $pureBlack: #000;
+  $lightGrey: #DFDFDF;
+  $pureWhite: #FFF;                                                                                                                                                         
+  
+  //Headings
+  h1, h2, h3, h4, p, a {
+    font-family: $dmSans;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $pureBlack;
+    text-decoration: none;
+  }
+
+  //buttons
+  .btn-1 {
+    height: 40px;
+    text-transform: uppercase;
+    color: $pureWhite;
+    background-color: $pureBlack;
+    width: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $lightGrey;
+      color: $pureBlack;
+    }
+  }
+
+  .btn-2 {
+    height: 16px;
+  }
 }
+
+
 </style>
