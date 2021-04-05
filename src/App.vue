@@ -68,6 +68,7 @@ import Nav from './components/Nav'
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
     &:hover {
       background-color: $lightGrey;
       color: $pureBlack;
