@@ -2,19 +2,26 @@
   <div id="app">
     <Nav/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav'
+import Footer from './components/Footer'
+
   export default {
     components: {
-      Nav
+      Nav,
+      Footer
     }
   }
 </script>
 
 <style lang="scss">
+body {
+  margin: 0
+}
 #app {
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
@@ -77,6 +84,16 @@ import Nav from './components/Nav'
 
   .btn-2 {
     height: 16px;
+    text-transform: uppercase;
+    color: $pureWhite;
+    background-color: $pureBlack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    svg {
+      margin-left: 16px;
+    }
   }
 }
 
