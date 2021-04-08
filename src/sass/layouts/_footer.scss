@@ -1,0 +1,104 @@
+.footerMenu {
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--contain {
+        width: 75%;
+        height: 122px;
+        position: relative;
+        &_logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &_links {
+            width: 255px;
+            height: 121px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            left: 32%;
+            & a {
+                color: #FFF!important;
+            }
+        }
+        &_icons {
+            width: 154px;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &_textCopyright {
+            color: #FFF;
+            opacity: 0.5;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .btn-2 {
+            width: 168px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    @include tablet-only {
+        &--contain {
+            &_links {
+                flex-direction: row;
+                left: 0;
+                top: 48px;
+            }
+        }
+    }
+    
+    @include mobile-only {
+        height: 539px;
+        &--contain {
+            width: 310px;
+            height: 427px;
+            &_logo {
+                right: 0;
+                margin: auto;
+                width: 170px;
+            }
+            &_icons {
+                top: 48px;
+                right: 0;
+                margin: auto;
+                bottom: auto;
+            } 
+            &_links {
+                flex-direction: column;
+                align-items: center;
+                top: 117px;
+                margin: auto;
+                left: 0;
+                right: 0;
+            }
+            &_textCopyright {
+                left: 0;
+                margin: auto;
+                width: 255px;
+                font-size: 15px;
+            }
+            .btn-2 {
+                top: auto;
+                bottom: 54px;
+                left: 0;
+                margin: auto;
+            }
+        }
+    }
+
+}

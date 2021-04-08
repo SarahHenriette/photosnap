@@ -1,0 +1,38 @@
+h1, h2, h3, h4, p, a {
+    font-family: $dmSans;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+a {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $pureBlack;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    li {
+        list-style-type: none;
+    }
+}

@@ -1,0 +1,81 @@
+.navMenu {
+    width: 100%;
+    height: 72px;
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    &, &--desktop, &--desktop_links{
+        display: flex;
+    }
+    //desktop
+    &--desktop {
+        width: 1110px;
+        height: 40px;
+        justify-content: space-between;
+        align-items: center;
+        &_links {
+            width: 269px;
+            height: 16px;
+            justify-content: space-between;
+        }
+        @include mobile-only {
+            display: none;
+        }
+    }
+    //mobile
+    &--mobile {
+        display: none;
+        @include mobile-only {
+            display: flex;
+            width: 327px;
+            height: 16px;
+            justify-content: space-between;
+            align-items: center;
+            &_iconBurger {
+                width: 20px;
+                height: 6px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                .navMenu--mobile_lineIconBurger {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #000;
+                }
+            }
+            &_menuBurger {
+                width: 100%;
+                height: 253px;
+                position: absolute;
+                left: 0;
+                top: 72px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;  
+                background-color: $pureWhite; 
+                z-index: 5;
+                .navMenu--mobile_linksMenuBurger {
+                    width: 310px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        letter-spacing: 2.5px;
+                    }
+                }
+                .navMenu--mobile_lineMenuBurger {
+                    width: 310px;
+                    height: 1px;
+                    background-color: #000;
+                    margin: 20px 0;
+                }
+                .navMenu--mobile_btn-1 {
+                    width: 310px;
+                }             
+            }
+        }
+    }
+}

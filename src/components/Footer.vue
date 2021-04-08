@@ -1,14 +1,14 @@
 <template>
-    <footer>
-        <div class="contain-footer">
-            <Logo class="logo" color="#FFF"/>
-            <div class="contain-footer-links">
-                <li><router-link to="/home">Home</router-link></li>
-                <li><router-link to="/stories">Stories</router-link></li>
-                <li><router-link to="/Features">Features</router-link></li>
-                <li><router-link to="/Features">Pricing</router-link></li>
+    <div class="footerMenu">
+        <div class="footerMenu--contain">
+            <Logo class="footerMenu--contain_logo" color="#FFF"/>
+            <div class="footerMenu--contain_links">
+                <li class="footerMenu--contain_link"><router-link to="/home">Home</router-link></li>
+                <li class="footerMenu--contain_link"><router-link to="/stories">Stories</router-link></li>
+                <li class="footerMenu--contain_link"><router-link to="/Features">Features</router-link></li>
+                <li class="footerMenu--contain_link"><router-link to="/Features">Pricing</router-link></li>
             </div>
-            <div class="contain-footer-icons">
+            <div class="footerMenu--contain_icons">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="facebook"><path d="M18.8958 0H1.10417C0.494167 0 0 0.494167 0 1.10417V18.8967C0 19.5058 0.494167 20 1.10417 20H10.6833V12.255H8.07667V9.23667H10.6833V7.01083C10.6833 4.4275 12.2608 3.02083 14.5658 3.02083C15.67 3.02083 16.6183 3.10333 16.895 3.14V5.84L15.2967 5.84083C14.0433 5.84083 13.8008 6.43667 13.8008 7.31V9.2375H16.79L16.4008 12.2558H13.8008V20H18.8975C19.5058 20 20 19.5058 20 18.8958V1.10417C20 0.494167 19.5058 0 18.8958 0Z" fill="white"/></svg>
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="youtube"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3333 0C4.81081 0 0.333313 4.4775 0.333313 10C0.333313 15.5225 4.81081 20 10.3333 20C15.8558 20 20.3333 15.5225 20.3333 10C20.3333 4.4775 15.8558 0 10.3333 0ZM14.0341 14.0767C12.2825 14.1967 8.38081 14.1967 6.63165 14.0767C4.73498 13.9467 4.51415 13.0183 4.49998 10C4.51415 6.97583 4.73748 6.05333 6.63165 5.92333C8.38081 5.80333 12.2833 5.80333 14.0341 5.92333C15.9316 6.05333 16.1516 6.98167 16.1666 10C16.1516 13.0242 15.9291 13.9467 14.0341 14.0767ZM12.7641 9.99667L8.66665 8.04833V11.9517L12.7641 9.99667Z" fill="white"/></svg>
                 <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="twitter"><path d="M20.6667 2.79746C19.9309 3.12412 19.14 3.34412 18.31 3.44329C19.1575 2.93579 19.8084 2.13162 20.1142 1.17329C19.3217 1.64329 18.4434 1.98496 17.5084 2.16912C16.7609 1.37162 15.6934 0.873291 14.5134 0.873291C11.8642 0.873291 9.91752 3.34496 10.5159 5.91079C7.10669 5.73996 4.08335 4.10662 2.05919 1.62412C0.984187 3.46829 1.50169 5.88079 3.32835 7.10246C2.65669 7.08079 2.02335 6.89662 1.47085 6.58912C1.42585 8.48996 2.78835 10.2683 4.76169 10.6641C4.18419 10.8208 3.55169 10.8575 2.90835 10.7341C3.43002 12.3641 4.94502 13.55 6.74169 13.5833C5.01669 14.9358 2.84335 15.54 0.666687 15.2833C2.48252 16.4475 4.64002 17.1266 6.95669 17.1266C14.575 17.1266 18.8792 10.6925 18.6192 4.92162C19.4209 4.34246 20.1167 3.61996 20.6667 2.79746Z" fill="white"/></svg>
@@ -16,9 +16,9 @@
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="instagram"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3333 0C7.61748 0 7.27748 0.0116667 6.21081 0.06C2.57915 0.226667 0.560813 2.24167 0.394146 5.87667C0.34498 6.94417 0.333313 7.28417 0.333313 10C0.333313 12.7158 0.34498 13.0567 0.393313 14.1233C0.55998 17.755 2.57498 19.7733 6.20998 19.94C7.27748 19.9883 7.61748 20 10.3333 20C13.0491 20 13.39 19.9883 14.4566 19.94C18.085 19.7733 20.1083 17.7583 20.2725 14.1233C20.3216 13.0567 20.3333 12.7158 20.3333 10C20.3333 7.28417 20.3216 6.94417 20.2733 5.8775C20.11 2.24917 18.0925 0.2275 14.4575 0.0608333C13.39 0.0116667 13.0491 0 10.3333 0ZM10.3333 1.8025C13.0033 1.8025 13.32 1.8125 14.375 1.86083C17.085 1.98417 18.3508 3.27 18.4741 5.96C18.5225 7.01417 18.5316 7.33083 18.5316 10.0008C18.5316 12.6717 18.5216 12.9875 18.4741 14.0417C18.35 16.7292 17.0875 18.0175 14.375 18.1408C13.32 18.1892 13.005 18.1992 10.3333 18.1992C7.66331 18.1992 7.34665 18.1892 6.29248 18.1408C3.57581 18.0167 2.31665 16.725 2.19331 14.0408C2.14498 12.9867 2.13498 12.6708 2.13498 10C2.13498 7.33 2.14581 7.01417 2.19331 5.95917C2.31748 3.27 3.57998 1.98333 6.29248 1.86C7.34748 1.8125 7.66331 1.8025 10.3333 1.8025ZM5.19831 10C5.19831 7.16417 7.49748 4.865 10.3333 4.865C13.1691 4.865 15.4683 7.16417 15.4683 10C15.4683 12.8367 13.1691 15.1358 10.3333 15.1358C7.49748 15.1358 5.19831 12.8358 5.19831 10ZM10.3333 13.3333C8.49248 13.3333 6.99998 11.8417 6.99998 10C6.99998 8.15917 8.49248 6.66667 10.3333 6.66667C12.1741 6.66667 13.6666 8.15917 13.6666 10C13.6666 11.8417 12.1741 13.3333 10.3333 13.3333ZM14.4708 4.6625C14.4708 4 15.0083 3.4625 15.6716 3.4625C16.3341 3.4625 16.8708 4 16.8708 4.6625C16.8708 5.325 16.3341 5.8625 15.6716 5.8625C15.0083 5.8625 14.4708 5.325 14.4708 4.6625Z" fill="white"/></svg>
             </div>
             <a href="" class="btn-2">get an invite<svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 7H41.864" stroke="white"/><path d="M35.4282 1L41.4282 7L35.4282 13" stroke="white"/></svg></a>
-            <p class="text-copyright">Copyright 2019. All Rights Reserved</p>
+            <p class="footerMenu--contain_textCopyright">Copyright 2019. All Rights Reserved</p>
         </div>
-    </footer>
+    </div>
 </template>
 
 <script>
@@ -30,111 +30,5 @@ export default {
 }
 </script>
 <style lang="scss">
-    footer {
-        width: 100%;
-        height: 250px;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .contain-footer {
-            width: 75%;
-            height: 122px;
-            position: relative;
-            .logo {
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            .contain-footer-links {
-                width: 255px;
-                height: 121px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                position: absolute;
-                left: 32%;
-                li {
-                    list-style-type: none;
-                }
-                li a {
-                    color: #FFF!important;
-                }
-            }
-            .contain-footer-icons {
-                width: 154px;
-                height: 20px;
-                display: flex;
-                justify-content: space-between;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-            .btn-2 {
-                background: green;
-                width: 168px;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-            .text-copyright {
-                color: #FFF;
-                opacity: 0.5;
-                margin: 0;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
-        }
-    }
-    @media screen and (max-width: 790px) {
-        footer .contain-footer {
-            .contain-footer-links {
-                flex-direction: row;
-                left: 0;
-                top: 48px;
-            }
-        }
-    }
 
-    @media screen and (max-width: 690px) {
-        footer {
-            height: 539px;
-            .contain-footer {
-                width: 310px;
-                height: 427px;
-                .logo {
-                    right: 0;
-                    margin: auto;
-                    width: 170px;
-                }
-                .contain-footer-icons {
-                    top: 48px;
-                    right: 0;
-                    margin: auto;
-                    bottom: auto;
-                } 
-                .contain-footer-links {
-                    flex-direction: column;
-                    align-items: center;
-                    top: 117px;
-                    margin: auto;
-                    left: 0;
-                    right: 0;
-                }
-                .btn-2 {
-                    top: auto;
-                    bottom: 54px;
-                    left: 0;
-                    margin: auto;
-                }
-                .text-copyright {
-                    left: 0;
-                    margin: auto;
-                    width: 255px;
-                    font-size: 15px;
-                }
-            }
-        }
-    }
 </style>

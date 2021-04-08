@@ -1,0 +1,29 @@
+.btn-1 {
+    height: 40px;
+    text-transform: uppercase;
+    color: $pureWhite;
+    background-color: $pureBlack;
+    width: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    &:hover {
+      background-color: $lightGrey;
+      color: $pureBlack;
+    }
+  }
+
+  .btn-2 {
+    height: 16px;
+    text-transform: uppercase;
+    color: $pureWhite;
+    background-color: $pureBlack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    svg {
+      margin-left: 16px;
+    }
+  }
