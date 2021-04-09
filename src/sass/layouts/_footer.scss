@@ -1,84 +1,52 @@
-.footerMenu {
-    width: 100%;
-    height: 250px;
-    background-color: #000;
+@mixin widthHeight ($width, $height) {
+    width: $width;
+    height: $height
+}
+@mixin displayFlex ($direction: initial, $justify: initial, $align: initial) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.footerMenu {
+    @include widthHeight(100%, 250px);
+    @include displayFlex(row, center, center);
+    background-color: $pureBlack;
+    @include mobile-only {
+        height: 539px;
+    }
+
     &--contain {
-        width: 75%;
-        height: 122px;
+        @include widthHeight(75%, 122px);
         position: relative;
+        @include mobile-only {
+            @include widthHeight(310px, 427px)
+        }
         &_logo {
             position: absolute;
             top: 0;
             left: 0;
-        }
-        &_links {
-            width: 255px;
-            height: 121px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: absolute;
-            left: 32%;
-            & a {
-                color: #FFF!important;
-            }
-        }
-        &_icons {
-            width: 154px;
-            height: 20px;
-            display: flex;
-            justify-content: space-between;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-        &_textCopyright {
-            color: #FFF;
-            opacity: 0.5;
-            margin: 0;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-
-        .btn-2 {
-            width: 168px;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-
-    @include tablet-only {
-        &--contain {
-            &_links {
-                flex-direction: row;
-                left: 0;
-                top: 48px;
-            }
-        }
-    }
-    
-    @include mobile-only {
-        height: 539px;
-        &--contain {
-            width: 310px;
-            height: 427px;
-            &_logo {
+            @include mobile-only {
                 right: 0;
                 margin: auto;
                 width: 170px;
             }
-            &_icons {
-                top: 48px;
-                right: 0;
-                margin: auto;
-                bottom: auto;
-            } 
-            &_links {
+        }
+        &_links {
+            @include widthHeight(255px, 121px);
+            @include displayFlex(column, space-between, center);
+            position: absolute;
+            left: 32%;
+            & a {
+                color: $pureWhite!important;
+            }
+            @include tablet-only {
+                flex-direction: row;
+                left: 0;
+                top: -18px;
+            }
+            @include mobile-only {
                 flex-direction: column;
                 align-items: center;
                 top: 117px;
@@ -86,13 +54,41 @@
                 left: 0;
                 right: 0;
             }
-            &_textCopyright {
+        }
+        &_icons {
+            @include widthHeight(154px, 20px);
+            @include displayFlex(row, space-between, center);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @include mobile-only {
+                top: 48px;
+                right: 0;
+                margin: auto;
+                bottom: auto;
+            }
+        }
+        &_textCopyright {
+            color: $pureWhite;
+            opacity: 0.5;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            @include mobile-only {
                 left: 0;
                 margin: auto;
                 width: 255px;
                 font-size: 15px;
             }
-            .btn-2 {
+        }
+
+        .btn-2 {
+            width: 168px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include mobile-only {
                 top: auto;
                 bottom: 54px;
                 left: 0;
@@ -100,5 +96,4 @@
             }
         }
     }
-
 }
