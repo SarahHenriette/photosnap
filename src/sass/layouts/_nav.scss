@@ -2,8 +2,6 @@
     @include widthHeight(100%, 72px);
     @include displayFlex(row, center, center);
     background-color: #FFF;
-
-    //desktop
     &--desktop {
         @include widthHeight(1110px, 40px);
         @include displayFlex(row, space-between, center);
@@ -14,47 +12,6 @@
         }
         @include mobile-only {
             display: none;
-        }
-    }
-    //mobile
-    &--mobile {
-        display: none;
-        @include mobile-only {
-            @include widthHeight(327px, 16px);
-            @include displayFlex(row, space-between, center);
-            &_iconBurger {
-                @include widthHeight(20px, 6px);
-                @include displayFlex(column, space-between, center);
-                cursor: pointer;
-                .navMenu--mobile_lineIconBurger {
-                    @include widthHeight(100%, 1px);
-                    background-color: $pureBlack;
-                }
-            }
-            &_menuBurger {
-                @include widthHeight(100%, 253px);
-                @include displayFlex(column, initial, center);
-                position: absolute;
-                left: 0;
-                top: 72px;
-                background-color: $pureWhite; 
-                z-index: 5;
-                .navMenu--mobile_linksMenuBurger {
-                    @include widthHeight(310px, 100px);
-                    @include displayFlex(column, space-between, center);
-                    a{
-                        letter-spacing: 2.5px;
-                    }
-                }
-                .navMenu--mobile_lineMenuBurger {
-                    @include widthHeight(310px,  1px);
-                    background-color: $pureBlack;
-                    margin: 20px 0;
-                }
-                .navMenu--mobile_btn-1 {
-                    width: 310px;
-                }             
-            }
         }
     }
 }

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Nav/>
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
     <Footer/>
   </div>
 </template>
@@ -24,6 +26,15 @@ body {
 }
 #app {
   @import "./sass/main.scss";
+
+    //transition router
+  .fade-enter-active, .fade-leave-active {
+    transition: 0.3s opacity ease-in-out;
+  }
+
+  .fade-enter, .fade-leave-active {
+    opacity: 0
+  }
 }
 
 

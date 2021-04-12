@@ -1,16 +1,41 @@
 .btn-1 {
-    height: 40px;
+    @include widthHeight(158px, 40px); 
+    @include displayFlex(row, center, center); 
     text-transform: uppercase;
     color: $pureWhite;
     background-color: $pureBlack;
-    width: 158px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     letter-spacing: 2px;
+    transition: background-color 1s;
+
     &:hover {
-      background-color: $lightGrey;
       color: $pureBlack;
+      &::after, &::before {
+        @include widthHeight(158px, 40px); 
+        @include displayFlex(row, center, center); 
+        position: absolute;
+      }
+      &::after {
+        content: "";
+        background-color: $lightGrey;
+        transform-origin: left;
+        color: $pureWhite;
+        animation: hoverBtn .3s ease-out forwards;
+      };
+      &::before {
+        content: "get an invite";
+        z-index: 10;
+        animation: colorTextBtn .5s ease-out forwards;
+      }
+  
+      @keyframes hoverBtn {
+        0% { transform: scaleX(0);}
+        100% { transform: scaleX(1);}
+      }
+      
+      @keyframes colorTextBtn {
+        0% { color: $pureWhite;}
+        100% { color: $pureBlack;}
+      }
     }
   }
 
