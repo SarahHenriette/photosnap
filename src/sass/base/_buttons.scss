@@ -51,4 +51,21 @@
     svg {
       margin-left: 16px;
     }
+    &:hover {
+      &::after {
+        content: "";
+        width: 170px;
+        height: 2px;
+        background-color: $pureWhite;
+        position: absolute;
+        bottom: 0;
+        top: 25px;
+        transform-origin: left;
+        animation: hoverBtn .3s ease-out forwards;
+      } 
+      @keyframes hoverBtn {
+        0% { transform: scaleX(0);}
+        100% { transform: scaleX(1);}
+      }
+    }
   }

@@ -3,10 +3,7 @@
         <ul class="navMenu--mobile_logo">
             <li><Logo color="#000"/></li>
         </ul>
-        <div class="navMenu--mobile_iconBurger" @click="displayMenuMobile">
-            <div class="navMenu--mobile_lineIconBurger"></div>
-            <div class="navMenu--mobile_lineIconBurger"></div>
-        </div>
+        <div class="navMenu--mobile_iconBurger" @click="displayMenuMobile" :class="{ active: active }"></div>
         <div v-if="menuMobile" class="navMenu--mobile_menuBurger" >
             <ul class="navMenu--mobile_linksMenuBurger">
                 <li><router-link to="/stories">Stories</router-link></li>
@@ -29,11 +26,17 @@
         data () {
             return {
                 menuMobile: false,
+                active: ""
             }
         },
         methods: {
             displayMenuMobile(){
                 this.menuMobile = !this.menuMobile
+                if(this.menuMobile == true) {
+                    this.active= "active"
+                }else {
+                    this.active= ""
+                }
             }
         }
     }

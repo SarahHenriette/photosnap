@@ -1,0 +1,133 @@
+.navMenu {
+    &--mobile {
+        display: none;
+        @include mobile-only {
+            @include widthHeight(327px, 16px);
+            @include displayFlex(row, space-between, center);
+            &_iconBurger {
+                @include widthHeight(20px, 6px);
+                @include displayFlex(column, space-between, center);
+                cursor: pointer;
+                transform: rotate(0);
+                width: 20px;
+                // &::before, &::after {
+                //     content: "";
+                //     @include widthHeight(100%, 1px);
+                //     background-color: $pureBlack;
+                //     width: 20px;
+                // }
+                &::before {
+                    content: "";
+                    @include widthHeight(100%, 1px);
+                    background-color: $pureBlack;
+                    width: 21px;
+                    animation: beforeMenuBurgerInverse 0.2s ease-in-out both;
+                }
+
+                &::after {
+                    content: "";
+                    @include widthHeight(100%, 1px);
+                    background-color: $pureBlack;
+                    width: 20px;
+                    animation: afterMenuBurgerInverse 0.3s ease-in-out both;
+                }
+
+                @keyframes beforeMenuBurgerInverse {
+                    0% {
+                        transform: rotate(90deg);
+                        height: 2px;
+                    }
+                    100% {
+                        transform: rotate(0);
+                        height: 1px;
+                    }
+                }
+
+                @keyframes afterMenuBurgerInverse {
+                    0% {
+                        transform: rotate(180deg);
+                        height: 2px;
+                    }
+                    100% {
+                        transform: rotate(0);
+                        height: 1px;
+                    }
+                }
+             
+            }
+
+
+
+            .active{
+                overflow: hidden;
+                animation: menuBurger 0.1s ease-in-out both;
+                &::before {
+                    animation: beforeMenuBurger 0.5s ease-in-out both;
+                }
+                &::after { 
+                    animation: afterMenuBurger 0.5s ease-in-out both;
+                }
+            }
+
+
+            @keyframes beforeMenuBurger {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(90deg);
+
+                }
+            }
+
+            @keyframes afterMenuBurger {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(180deg);
+                }
+            }
+
+            @keyframes menuBurger {
+                0% {
+                   justify-content: space-between;
+                   transform: rotate(0);
+                   height: 6px;
+                   width: 20px;
+
+                }
+                100% {
+                  justify-content: center;
+                  transform: rotate(45deg);
+                  height: 20px;
+                //   background-color: red
+                }
+            }
+
+
+            &_menuBurger {
+                @include widthHeight(100%, 253px);
+                @include displayFlex(column, initial, center);
+                @include position (absolute, 72px, auto, auto, 0);
+                background-color: $pureWhite; 
+                z-index: 5;
+                .navMenu--mobile_linksMenuBurger {
+                    @include widthHeight(310px, 100px);
+                    @include displayFlex(column, space-between, center);
+                    a{
+                        letter-spacing: 2.5px;
+                    }
+                }
+                .navMenu--mobile_lineMenuBurger {
+                    @include widthHeight(310px,  1px);
+                    background-color: $pureBlack;
+                    margin: 20px 0;
+                }
+                .navMenu--mobile_btn-1 {
+                    width: 310px;
+                }             
+            }
+        }
+    }
+}
