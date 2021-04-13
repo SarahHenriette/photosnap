@@ -10,17 +10,12 @@
                 cursor: pointer;
                 transform: rotate(0);
                 width: 20px;
-                // &::before, &::after {
-                //     content: "";
-                //     @include widthHeight(100%, 1px);
-                //     background-color: $pureBlack;
-                //     width: 20px;
-                // }
+                animation: menuBurgerInverse 0.2s ease-in-out both;
+                padding: 15px 0;
                 &::before {
                     content: "";
                     @include widthHeight(100%, 1px);
                     background-color: $pureBlack;
-                    width: 21px;
                     animation: beforeMenuBurgerInverse 0.2s ease-in-out both;
                 }
 
@@ -34,32 +29,34 @@
 
                 @keyframes beforeMenuBurgerInverse {
                     0% {
-                        transform: rotate(90deg);
-                        height: 2px;
+                        transform: translateY(2.5px) scaleX(0.05) scaleY(20);
                     }
                     100% {
-                        transform: rotate(0);
-                        height: 1px;
+                        transform: translateY(0) scaleX(1) scaleY(1);
                     }
                 }
 
                 @keyframes afterMenuBurgerInverse {
                     0% {
-                        transform: rotate(180deg);
-                        height: 2px;
+                        transform: translateY(-1.5px) scaleY(1) scaleX(1.1) ;
+                    }
+                    100% {
+                        transform: translateY(0) scaleY(1) scaleX(1);
+                    }
+                }
+
+                @keyframes menuBurgerInverse {
+                    0% {
+                        transform: rotate(45deg);
                     }
                     100% {
                         transform: rotate(0);
-                        height: 1px;
                     }
                 }
              
             }
 
-
-
             .active{
-                overflow: hidden;
                 animation: menuBurger 0.1s ease-in-out both;
                 &::before {
                     animation: beforeMenuBurger 0.5s ease-in-out both;
@@ -72,36 +69,28 @@
 
             @keyframes beforeMenuBurger {
                 0% {
-                    transform: rotate(0);
+                    transform: translateY(0) scaleX(1) scaleY(1);
                 }
                 100% {
-                    transform: rotate(90deg);
-
+                    transform: translateY(2.5px) scaleX(0.05) scaleY(20) ;
                 }
             }
 
             @keyframes afterMenuBurger {
                 0% {
-                    transform: rotate(0);
+                    transform: translateY(0) scaleY(1) scaleX(1);
                 }
                 100% {
-                    transform: rotate(180deg);
+                    transform: translateY(-1.5px) scaleY(1) scaleX(1.1) ;
                 }
             }
 
             @keyframes menuBurger {
                 0% {
-                   justify-content: space-between;
                    transform: rotate(0);
-                   height: 6px;
-                   width: 20px;
-
                 }
                 100% {
-                  justify-content: center;
                   transform: rotate(45deg);
-                  height: 20px;
-                //   background-color: red
                 }
             }
 
