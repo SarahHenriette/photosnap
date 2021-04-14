@@ -1,10 +1,15 @@
 h1, h2, h3, h4, p, a {
     font-family: $dmSans;
+    margin: 0;
 }
 
-h1 {
+h1, .h2-large {
     font-size: 40px;
     line-height: 48px;
+    text-transform: uppercase;
+    @include mobile-only {
+        font-size: 32px;
+    }
 }
 
 h2 {
@@ -22,12 +27,62 @@ h4 {
     line-height: 16px;
 }
 
+.a-btn {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $pureBlack;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+        &::after {
+          content: "";
+          width: 50px;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          top: 25px;
+          transform-origin: left;
+          animation: hoverBtn .3s ease-out forwards;
+          background-color: $pureBlack;
+        } 
+    @keyframes hoverBtn {
+        0% { transform: scaleX(0);}
+        100% { transform: scaleX(1);}
+      }
+    }
+}
 a {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     color: $pureBlack;
     text-decoration: none;
+    position: relative;
+    &:hover {
+        &::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          top: 25px;
+          transform-origin: left;
+          animation: hoverBtn .3s ease-out forwards;
+        //   background-color: $pureBlack;
+        } 
+    @keyframes hoverBtn {
+        0% { transform: scaleX(0);}
+        100% { transform: scaleX(1);}
+      }
+    }
+}
+
+p {
+    font-size: 15px;
 }
 
 ul {

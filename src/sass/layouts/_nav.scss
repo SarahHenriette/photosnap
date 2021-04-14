@@ -9,6 +9,9 @@
         &_links {
             @include widthHeight(269px, 16px);
             @include displayFlex(row, space-between, center);
+            a:hover::after {
+                background-color: $pureBlack;
+            }
         }
         @include mobile-only {
             display: none;
