@@ -1,0 +1,77 @@
+.article {
+    @include widthHeight(360px, 500px);
+    position: relative;
+    .article--containText {
+        @include widthHeight(280px, 99px);
+        margin: auto;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        p {
+            color: $pureWhite;
+        }
+        .article--containText_title {
+            font-weight: 700;
+        }
+        .article--containText_author::before {
+            content: "";
+            @include widthHeight(280px, 1px);
+            background-color: $pureWhite;
+            position: absolute;
+            top: 62px;
+        }
+        .article--containText_btn {
+            position: absolute;
+            bottom: 0;
+            color: $pureWhite;
+        }
+    }
+
+    @include tablet-only {
+        @include widthHeight(384px, 500px);
+        
+    }
+
+    @include mobile-only {
+        @include widthHeight(100%, 375px);
+        
+    }
+}
+
+.article--image_theMountains {
+    background-image: url("../public/stories/desktop/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile-only {
+        background-image: url("../public/stories/mobile/mountains.jpg");
+    }
+}
+
+
+.article--image_sunsetCityscapes {
+    background-image: url("../public/stories/desktop/cityscapes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile-only {
+        background-image: url("../public/stories/mobile/cityscapes.jpg");
+    }
+}
+
+.article--image_18DaysVoyage {
+    background-image: url("../public/stories/desktop/18-days-voyage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile-only {
+        background-image: url("../public/stories/mobile/18-days-voyage.jpg");
+    }
+}
+
+.article--image_architecturals {
+    background-image: url("../public/stories/desktop/architecturals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile-only {
+        background-image: url("../public/stories/mobile/architecturals.jpg");
+    }
+}

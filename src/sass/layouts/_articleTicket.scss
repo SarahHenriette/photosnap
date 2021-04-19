@@ -26,7 +26,7 @@
                 margin-bottom: 21px;
             }
             p {
-                @include widthHeight(392px, auto);
+                @include widthHeight(100%, auto);
                 @include displayFlex(column, space-between, flex-start);
                 line-height: 25px;
                 color: $pureWhite;
