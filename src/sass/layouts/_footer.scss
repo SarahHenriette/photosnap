@@ -29,7 +29,11 @@
             left: 27%;
             & a {
                 color: $pureWhite!important;
+                &:hover::after {
+                    background-color: $pureWhite!important;
+                }
             }
+           
             @include tablet-only {
                 flex-direction: row;
                 left: 0;
@@ -77,6 +81,10 @@
             position: absolute;
             top: 0;
             right: 0;
+            color: $pureWhite;
+            &:hover::after {
+                background-color: $pureWhite;
+            }
             @include mobile-only {
                 top: auto;
                 bottom: 54px;

@@ -1,0 +1,14 @@
+.breakpoint {
+    @include widthHeight(350px, 236px);
+    @include displayFlex(column, space-between, center);
+    .breakpoint--text {
+        @include widthHeight(100%, 116px);
+        @include displayFlex(column, space-between, center);
+        &_nameBreakpoint {
+            font-weight: 700;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
