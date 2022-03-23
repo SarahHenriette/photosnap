@@ -1,8 +1,15 @@
 .article {
-    @include widthHeight(360px, 500px);
+    @include widthHeight(25%, 500px);
     position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        @include widthHeight(100%, 100%);
+        background-color: #000;
+        opacity: 0.3;
+    }
     .article--containText {
-        @include widthHeight(280px, 99px);
+        @include widthHeight(280px, 110px);
         margin: auto;
         position: absolute;
         bottom: 40px;
@@ -11,15 +18,25 @@
         p {
             color: $pureWhite;
         }
-        .article--containText_title {
+        &_date {
+            font-size: 13px;
+            font-weight: 100;
+            margin-bottom: 5px;
+        }
+        &_title {
             font-weight: 700;
+            margin-bottom: 9px;
+            margin-top: 10px;
+        }
+        &_author {
+            font-size: 13px;
         }
         .article--containText_author::before {
             content: "";
             @include widthHeight(280px, 1px);
             background-color: $pureWhite;
             position: absolute;
-            top: 62px;
+            top: 80px;
         }
         .article--containText_btn {
             position: absolute;
@@ -29,49 +46,59 @@
     }
 
     @include tablet-only {
-        @include widthHeight(384px, 500px);
-        
+        @include widthHeight(50%, 500px);
     }
 
     @include mobile-only {
         @include widthHeight(100%, 375px);
-        
     }
 }
 
 .article--image_theMountains {
-    background-image: url("../public/stories/desktop/mountains.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include mobile-only {
-        background-image: url("../public/stories/mobile/mountains.jpg");
-    }
+    @include backgroundImage ("mountains");
 }
-
-
 .article--image_sunsetCityscapes {
-    background-image: url("../public/stories/desktop/cityscapes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include mobile-only {
-        background-image: url("../public/stories/mobile/cityscapes.jpg");
-    }
+    @include backgroundImage ("cityscapes");
 }
-
 .article--image_18DaysVoyage {
-    background-image: url("../public/stories/desktop/18-days-voyage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include mobile-only {
-        background-image: url("../public/stories/mobile/18-days-voyage.jpg");
-    }
+    @include backgroundImage ("18-days-voyage");
 }
-
 .article--image_architecturals {
-    background-image: url("../public/stories/desktop/architecturals.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include mobile-only {
-        background-image: url("../public/stories/mobile/architecturals.jpg");
-    }
+    @include backgroundImage ("architecturals");
+}
+.article--image_worldTour2019 {
+    @include backgroundImage ("world-tour");
+}
+.article--image_unforeseen {
+    @include backgroundImage ("unforeseen-corners")
+}
+.article--image_kingonAfrica {
+    @include backgroundImage ("king-on-africa")
+}
+.article--image_theTriptoNowhere {
+    @include backgroundImage ("trip-to-nowhere")
+}
+.article--image_rageofTheSea {
+    @include backgroundImage ("rage-of-the-sea")
+}
+.article--image_runningFree {
+    @include backgroundImage ("running-free")
+}
+.article--image_behindTheWaves {
+    @include backgroundImage ("behind-the-waves")
+}
+.article--image_calmWaters {
+    @include backgroundImage ("calm-waters")
+}
+.article--image_theMilkyWay {
+    @include backgroundImage ("milky-way")
+}
+.article--image_nightAtTheDarkForest {
+    @include backgroundImage ("dark-forest")
+}
+.article--image_somwarpetsBeauty {
+    @include backgroundImage ("somwarpet")
+}
+.article--image_landofDreams {
+    @include backgroundImage ("land-of-dreams")
 }

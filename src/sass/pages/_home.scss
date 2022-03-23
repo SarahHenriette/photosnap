@@ -24,7 +24,6 @@
         }
         @include tablet-only {
             @include displayFlex(column, center, center);
-        
         }
     }
 }

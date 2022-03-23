@@ -17,3 +17,13 @@
     left: $left;
 }
 
+@mixin backgroundImage ($imageName) {
+    background-image: url("../public/stories/desktop/"+ $imageName +".jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mobile-only {
+        background-image: url("../public/stories/mobile/"+ $imageName +".jpg");
+        background-position: bottom;
+
+    }
+}

@@ -13,6 +13,9 @@
                 background-color: $pureBlack;
             }
         }
+        @include tablet-only {
+            width: 689px;
+        }
         @include mobile-only {
             display: none;
         }

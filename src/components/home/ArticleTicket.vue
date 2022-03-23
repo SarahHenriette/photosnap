@@ -7,14 +7,14 @@
                 <router-link to="/stories" class="btn-2"><slot name="button"></slot><svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 7H41.864" :stroke="color"/><path d="M35.4282 1L41.4282 7L35.4282 13" :stroke="color"/></svg></router-link>
             </div>
         </div>
-        <div class="articleTicket--image" :class="className"></div>
+        <div class="articleTicket--image" :class="classNameImage"></div>
     </div>
 </template>
 
 
 <script>
 export default {
-    props: ["color", "className", "classNameArticleTicket"]
+    props: ["color", "classNameImage", "classNameArticleTicket"]
 }
 </script>
 

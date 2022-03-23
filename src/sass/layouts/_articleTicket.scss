@@ -11,12 +11,10 @@
             @include displayFlex(column-reverse, center, center);
         }
     }
-    @include mobile-only {
-    
-    }
+
 
     &--text  {
-        @include widthHeight(610px, 100%);
+        @include widthHeight(40%, 100%);
         @include displayFlex(row, center, center);
         &_contain {
             @include widthHeight(373px, auto);
@@ -49,18 +47,24 @@
         }
     }
     &--image {
-        @include widthHeight(830px, 100%);
+        @include widthHeight(60%, 100%);
         &_createAndShare {
             background-image: url("../public/home/desktop/create-and-share.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &_beautifulStories {
             background-image: url("../public/home/desktop/beautiful-stories.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &_designedForEveryone {
             background-image: url("../public/home/desktop/designed-for-everyone.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         @include tablet-only {
-            @include widthHeight(273px, 100%);
+            // @include widthHeight(273px, 100%);
             &_createAndShare {
                 background-image: url("../public/home/tablet/create-and-share.jpg");
             }

@@ -1,18 +1,18 @@
 <template>
     <div class="home">
-      <ArticleTicket color="white" className="articleTicket--image_createAndShare" 
+      <ArticleTicket color="white" classNameImage="articleTicket--image_createAndShare" 
       classNameArticleTicket="articleTicket--principal">
         <template v-slot:title>Create and share your photo stories.</template>
         <template v-slot:paragraphe>Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.</template>
         <template v-slot:button>get an invite</template>
       </ArticleTicket>
-      <ArticleTicket color="black" className="articleTicket--image_beautifulStories" 
+      <ArticleTicket color="black" classNameImage="articleTicket--image_beautifulStories" 
       classNameArticleTicket="articleTicket--secondary">
         <template v-slot:title>Beautiful stories every time</template>
         <template v-slot:paragraphe>We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.</template>
         <template v-slot:button>view the stories</template>
       </ArticleTicket>
-      <ArticleTicket color="black" className="articleTicket--image_designedForEveryone" 
+      <ArticleTicket color="black" classNameImage="articleTicket--image_designedForEveryone" 
       classNameArticleTicket="articleTicket--secondary">
         <template v-slot:title>Designed for everyone</template>
         <template v-slot:paragraphe>Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.</template>
@@ -20,10 +20,10 @@
       </ArticleTicket>
 
       <div class="home--articles">
-        <Article title="The Mountains" author="John Appleseed" className="article--image_theMountains"/>
-        <Article title="Sunset Cityscapes" author="Benjamin Cruz" className="article--image_sunsetCityscapes"/>
-        <Article title="18 Days Voyage" author="Alexei Borodin" className="article--image_18DaysVoyage"/>
-        <Article title="Architecturals" author="Samantha Brooke" className="article--image_architecturals"/>
+        <Article date="" title="The Mountains" author="John Appleseed" className="article--image_theMountains"/>
+        <Article date="" title="Sunset Cityscapes" author="Benjamin Cruz" className="article--image_sunsetCityscapes"/>
+        <Article date="" title="18 Days Voyage" author="Alexei Borodin" className="article--image_18DaysVoyage"/>
+        <Article date="" title="Architecturals" author="Samantha Brooke" className="article--image_architecturals"/>
       </div>
  
       <div class="home--breakpoints">
