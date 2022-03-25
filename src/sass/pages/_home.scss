@@ -8,7 +8,7 @@
     }
     &--breakpoints {
         @include widthHeight(100%, auto);
-        @include displayFlex(row, center, center);
+        @include displayFlex(row, space-around, center);
         margin: 120px auto;
         &_contain {
             @include widthHeight(1110px, 236px); 

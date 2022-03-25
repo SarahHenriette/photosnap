@@ -15,10 +15,39 @@
 
     &--text  {
         @include widthHeight(40%, 100%);
-        @include displayFlex(row, center, center);
+        @include tablet-only {
+            @include widthHeight(60%, 100%);
+        }
+        @include displayFlex(row, flex-start, center);
+        // @include mobile-only {
+        //     position: relative;
+        //     &::before {
+        //         content:'';
+        //         width: 128px;
+        //         height: 6px;
+        //         background: linear-gradient(#e66465, #9198e5);
+        //         position: absolute;
+        //        top: 0;
+        //        left: 10%
+        //     }
+        // }
+    
         &_contain {
             @include widthHeight(373px, auto);
             @include displayFlex(column, space-between, flex-start);
+            padding-left: 12%;
+            position: relative;
+            // &::before {
+            //     content:'';
+            //     width: 6px;
+            //     height: 100%;
+            //     background: linear-gradient(#e66465, #9198e5);
+            //     position: absolute;
+            //     left: 0;
+            //     @include mobile-only {
+            //         display: none;
+            //     }
+            // }
             h2 {
                 color: $pureWhite;
                 margin-bottom: 21px;
@@ -29,7 +58,7 @@
                 line-height: 25px;
                 color: $pureWhite;
                 opacity: 0.6;
-                margin-bottom: 48px;
+                // margin-bottom: 48px;
             }
             @include mobile-only {
                 @include widthHeight(318px, auto);
@@ -48,6 +77,9 @@
     }
     &--image {
         @include widthHeight(60%, 100%);
+        @include tablet-only {
+            @include widthHeight(40%, 100%);
+        }
         &_createAndShare {
             background-image: url("../public/home/desktop/create-and-share.jpg");
             background-repeat: no-repeat;
@@ -98,11 +130,36 @@
     @include widthHeight(100%, 650px);
     .articleTicket--text {
         background-color: $pureBlack;
+        @include mobile-only {
+            position: relative;
+            &::before {
+                content:'';
+                width: 128px;
+                height: 6px;
+                background: linear-gradient(#e66465, #9198e5);
+                position: absolute;
+               top: 0;
+               left: 10%
+            }
+        }
         h2, p, a{
             color: $pureWhite;
         }
         a:hover::after {
             background-color: $pureWhite;
+        }
+        &_contain {
+            &::before {
+                content:'';
+                width: 6px;
+                height: 100%;
+                background: linear-gradient(#e66465, #9198e5);
+                position: absolute;
+                left: 0;
+                @include mobile-only {
+                    display: none;
+                }
+            }
         }
     } 
 }

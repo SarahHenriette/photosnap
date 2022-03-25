@@ -1,0 +1,45 @@
+.card {
+    width: 350px;
+    @include tablet-only {
+        width: 80%;
+        margin: 5% 0;
+    }
+    @include displayFlex(column, center, center);
+    &--title {
+        margin: 10px 0;
+    }
+    &--paragraph {
+        width: 73%;
+        text-align: center;
+        margin: 10px 0;
+        font-weight: 100;   
+    }
+    &--price {
+        font-size: 40px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    &--button {
+        width: 270px;
+        height: 40px;
+        background-color: $pureBlack;
+        color: $pureWhite;
+        margin-top: 50px;
+    }
+}
+
+.card--normal {
+    height: 407px;
+    background-color: $veryLightGrey;
+}
+
+.card--pro {
+    height: 470px;
+    background-color: $pureBlack;
+    color: $pureWhite;
+    margin: 0 3% ;
+    .card--button {
+        background-color: $pureWhite;
+        color: $pureBlack;
+    }
+}
