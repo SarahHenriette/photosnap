@@ -1,5 +1,5 @@
 <template>
-    <div class="features">
+    <main class="features">
         <ArticleTicket color="" classNameImage="features--image_hero" 
             classNameArticleTicket="articleTicket--principal">
             <template v-slot:title>Features</template>
@@ -28,7 +28,7 @@
             </Breakpoint>
       </div>
       <BannerFooter/>
-    </div>
+    </main>
     
 </template>
 

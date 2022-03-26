@@ -1,6 +1,6 @@
 <template>
-    <article role="contentinfo" class="articleTicket" :class="classNameArticleTicket">
-        <div role="contentinfo" class="articleTicket--text">
+    <article class="articleTicket" :class="classNameArticleTicket">
+        <div class="articleTicket--text">
             <div class="articleTicket--text_contain">
                 <h2 class="h2-large"><slot name="title"></slot></h2>
                 <p><slot name="paragraphe"></slot></p>

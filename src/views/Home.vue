@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <main class="home">
       <ArticleTicket color="white" classNameImage="articleTicket--image_createAndShare" 
       classNameArticleTicket="articleTicket--principal">
         <template v-slot:title>Create and share your photo stories.</template>
@@ -40,7 +40,7 @@
           </Breakpoint>
         </div>
       </section>
-    </div>
+    </main>
 
 </template>
 

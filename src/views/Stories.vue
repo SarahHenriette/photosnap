@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <main class="about">
     <Header color="white">
         <template v-slot:button>get an invite</template>
     </Header>
@@ -22,7 +22,7 @@
       <Article date="February 25th 2020" title="Land of Dreams" author="William Malcolm" className="article--image_landofDreams"/>
     </div>
 
-  </div>
+  </main>
 </template>
 
 <script>

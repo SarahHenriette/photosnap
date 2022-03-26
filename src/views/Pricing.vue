@@ -1,5 +1,5 @@
 <template>
-    <div class="pricing">
+    <main class="pricing">
         <ArticleTicket color="" classNameImage="pricing--image_hero" 
             classNameArticleTicket="articleTicket--principal">
             <template v-slot:title>Pricing</template>
@@ -28,7 +28,7 @@
         <TableCompareMobile/>
         <BannerFooter/>
 
-    </div>
+    </main>
 </template>
 
 <script>
