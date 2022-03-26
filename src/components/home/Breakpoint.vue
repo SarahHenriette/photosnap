@@ -1,11 +1,11 @@
 <template>
-    <div class="breakpoint">
+    <section class="breakpoint">
         <slot name="iconBreakpoint"></slot>
-        <div role="paragraph" class="breakpoint--text">
+        <section role="paragraph" class="breakpoint--text">
             <h3 class="breakpoint--text_nameBreakpoint">{{ nameBreakpoint }}</h3>
             <p>{{ text }}</p>
-        </div>
-    </div>
+        </section>
+    </section>
 </template>
 
 
