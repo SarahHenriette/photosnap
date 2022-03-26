@@ -10,7 +10,7 @@ $ git clone https://github.com/SarahHenriette/photosnap.git
 
 Allez au repo cloné :
 ```
-$ cd myteam-multi-page-website
+$ cd photosnap
 ```
 
 Installez les packages npm (décrits dans `package.json`) :
