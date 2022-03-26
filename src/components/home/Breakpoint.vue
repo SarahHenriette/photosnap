@@ -2,7 +2,7 @@
     <div class="breakpoint">
         <slot name="iconBreakpoint"></slot>
         <div class="breakpoint--text">
-            <p class="breakpoint--text_nameBreakpoint">{{ nameBreakpoint }}</p>
+            <h3 class="breakpoint--text_nameBreakpoint">{{ nameBreakpoint }}</h3>
             <p>{{ text }}</p>
         </div>
     </div>
