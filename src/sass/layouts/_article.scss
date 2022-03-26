@@ -1,16 +1,22 @@
 .article {
     @include widthHeight(25%, 500px);
     position: relative;
+    margin-top: 0;
+    transition: margin-top ease-in-out .2s;
+    &:hover {
+        margin-top: -30px;
+        cursor: pointer;
+    }
     &::before {
         content: "";
         position: absolute;
         @include widthHeight(100%, 100%);
         background-color: #000;
-        opacity: 0.3;
+        opacity: 0.5;
     }
     .article--containText {
         @include widthHeight(280px, 110px);
-        margin: auto;
+        margin-left: 10%;
         position: absolute;
         bottom: 40px;
         left: 0;

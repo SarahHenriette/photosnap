@@ -29,6 +29,11 @@
         background-color: $pureBlack;
         color: $pureWhite;
         margin-top: 50px;
+        transition: background-color ease-in-out .2s, color ease-in-out .2s;
+        &:hover {
+            background-color: $lightGrey;
+            color: $pureBlack;
+        }
         @include mobile-only {
             width: 220px;
         }
@@ -61,6 +66,11 @@
     .card--button {
         background-color: $pureWhite;
         color: $pureBlack;
+        transition: background-color ease-in-out .2s, color ease-in-out .2s;
+        &:hover {
+            background-color: $lightGrey;
+            color: $pureBlack;
+        }
     }
 }
 

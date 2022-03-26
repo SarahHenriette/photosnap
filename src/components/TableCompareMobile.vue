@@ -6,33 +6,33 @@
         <div class="tableCompare--tr">
             <p class="tableCompare--tr_name">UNLIMITED STORY POSTING</p>
             <div class="tableCompare--tr_value">
-                <p class="tableCompare--tr_basic"><span>Basic</span><span>x</span></p>
-                <p class="tableCompare--tr_pro"><span>Pro</span><span>x</span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_basic"><span>Basic</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
+                <p class="tableCompare--tr_pro"><span>Pro</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
             <p class="tableCompare--tr_name">UNLIMITED PHOTO UPLOAD</p>
              <div class="tableCompare--tr_value">
-                <p class="tableCompare--tr_basic"><span>Basic</span><span>x</span></p>
-                <p class="tableCompare--tr_pro"><span>Pro</span><span>x</span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_basic"><span>Basic</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
+                <p class="tableCompare--tr_pro"><span>Pro</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
             <p class="tableCompare--tr_name">EMBEDDING CUSTOM CONTENT</p>
             <div class="tableCompare--tr_value">
                 <p class="tableCompare--tr_basic"><span>Basic</span><span></span></p>
-                <p class="tableCompare--tr_pro"><span>Pro</span><span>x</span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_pro"><span>Pro</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
             <p class="tableCompare--tr_name">CUSTOMIZE METADATA</p>
               <div class="tableCompare--tr_value">
                 <p class="tableCompare--tr_basic"><span>Basic</span><span></span></p>
-                <p class="tableCompare--tr_pro"><span>Pro</span><span>x</span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_pro"><span>Pro</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
@@ -40,7 +40,7 @@
                <div class="tableCompare--tr_value">
                 <p class="tableCompare--tr_basic"><span>Basic</span><span></span></p>
                 <p class="tableCompare--tr_pro"><span>Pro</span><span></span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
@@ -48,7 +48,7 @@
           <div class="tableCompare--tr_value">
                 <p class="tableCompare--tr_basic"><span>Basic</span><span></span></p>
                 <p class="tableCompare--tr_pro"><span>Pro</span><span></span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
@@ -56,7 +56,7 @@
                <div class="tableCompare--tr_value">
                 <p class="tableCompare--tr_basic"><span>Basic</span><span></span></p>
                 <p class="tableCompare--tr_pro"><span>Pro</span><span></span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
         <div class="tableCompare--tr">
@@ -64,7 +64,7 @@
             <div class="tableCompare--tr_value">
                 <p class="tableCompare--tr_basic"><span>Basic</span><span></span></p>
                 <p class="tableCompare--tr_pro"><span>Pro</span><span></span></p>
-                <p class="tableCompare--tr_business"><span>Business</span><span>x</span></p>
+                <p class="tableCompare--tr_business"><span>Business</span><span> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/></svg></span></p>
             </div>
         </div>
     </div>

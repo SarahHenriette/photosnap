@@ -35,12 +35,9 @@
     import ArticleTicket from "./../components/home/ArticleTicket"
     import Card from "./../components/Card"
     import CardTablet from "./../components/CardTablet"
-
     import TableCompare from "./../components/TableCompare"
     import TableCompareMobile from "./../components/TableCompareMobile"
-    
     import BannerFooter from "./../components/BannerFooter"
-
     export default {
         name: 'Home',
         data () {
@@ -54,7 +51,7 @@
             BannerFooter,
             TableCompare,
             CardTablet,
-            TableCompareMobile
+            TableCompareMobile,
         }
     }
 </script>

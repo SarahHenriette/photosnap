@@ -1,7 +1,6 @@
 .breakpoint {
     @include widthHeight(30%, 210px);
     @include displayFlex(column, space-between, center);
-    margin-bottom: 10%;
 
     @include tablet-only {
         @include widthHeight(50%, 210px);
