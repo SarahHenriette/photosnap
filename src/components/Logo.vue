@@ -13,7 +13,7 @@
                     </linearGradient>
                     </defs>
                     </svg>
-                </router-link>
+    </router-link>
 </template>
 
 <script>

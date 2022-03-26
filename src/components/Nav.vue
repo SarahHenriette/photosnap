@@ -1,5 +1,5 @@
 <template>
-     <div class="navMenu">
+     <nav class="navMenu">
          <div class="navMenu--desktop">
             <ul class="navMenu--desktop_logo">
                 <li><Logo color="#000"/></li>
@@ -12,7 +12,7 @@
             <router-link to="/stories" class="navMenu--desktop_btn1 btn-1 a-btn">get an invite</router-link>
          </div>
          <NavMobile/>
-    </div>
+    </nav>
 </template>
 
 <script>

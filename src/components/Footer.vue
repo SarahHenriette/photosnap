@@ -1,13 +1,13 @@
 <template>
-    <div class="footerMenu">
+    <footer class="footerMenu">
         <div class="footerMenu--contain">
-            <Logo class="footerMenu--contain_logo" color="#FFF"/>
-            <div class="footerMenu--contain_links">
+            <Logo class="footerMenu--contain_logo" aria-label="logo of the page" color="#FFF"/>
+            <ul class="footerMenu--contain_links">
                 <li class="footerMenu--contain_link"><router-link to="/home">Home</router-link></li>
                 <li class="footerMenu--contain_link"><router-link to="/stories">Stories</router-link></li>
                 <li class="footerMenu--contain_link"><router-link to="/Features">Features</router-link></li>
                 <li class="footerMenu--contain_link"><router-link to="/Features">Pricing</router-link></li>
-            </div>
+            </ul>
             <div class="footerMenu--contain_icons">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="facebook"><path d="M18.8958 0H1.10417C0.494167 0 0 0.494167 0 1.10417V18.8967C0 19.5058 0.494167 20 1.10417 20H10.6833V12.255H8.07667V9.23667H10.6833V7.01083C10.6833 4.4275 12.2608 3.02083 14.5658 3.02083C15.67 3.02083 16.6183 3.10333 16.895 3.14V5.84L15.2967 5.84083C14.0433 5.84083 13.8008 6.43667 13.8008 7.31V9.2375H16.79L16.4008 12.2558H13.8008V20H18.8975C19.5058 20 20 19.5058 20 18.8958V1.10417C20 0.494167 19.5058 0 18.8958 0Z" fill="white"/></svg>
                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="youtube"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3333 0C4.81081 0 0.333313 4.4775 0.333313 10C0.333313 15.5225 4.81081 20 10.3333 20C15.8558 20 20.3333 15.5225 20.3333 10C20.3333 4.4775 15.8558 0 10.3333 0ZM14.0341 14.0767C12.2825 14.1967 8.38081 14.1967 6.63165 14.0767C4.73498 13.9467 4.51415 13.0183 4.49998 10C4.51415 6.97583 4.73748 6.05333 6.63165 5.92333C8.38081 5.80333 12.2833 5.80333 14.0341 5.92333C15.9316 6.05333 16.1516 6.98167 16.1666 10C16.1516 13.0242 15.9291 13.9467 14.0341 14.0767ZM12.7641 9.99667L8.66665 8.04833V11.9517L12.7641 9.99667Z" fill="white"/></svg>
@@ -18,7 +18,7 @@
             <a href="" class="btn-2">get an invite<svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 7H41.864" stroke="white"/><path d="M35.4282 1L41.4282 7L35.4282 13" stroke="white"/></svg></a>
             <p class="footerMenu--contain_textCopyright">Copyright 2019. All Rights Reserved</p>
         </div>
-    </div>
+    </footer>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="cardTablet" :class="className">
+    <article class="cardTablet" :class="className">
         <div class="cardTablet--text">
             <h2 class="card--title">{{ title }}</h2>
             <p class="card--paragraph">{{ paragraph }}</p>
@@ -9,7 +9,7 @@
             <p class="card--price">$ {{ price }}</p>
             <span>per {{ period }}</span>
         </div>
-    </div>
+    </article>
 </template>
 
 <script>
