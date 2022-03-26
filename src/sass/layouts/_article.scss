@@ -6,6 +6,14 @@
     &:hover {
         margin-top: -30px;
         cursor: pointer;
+        &::after {
+            content:'';
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to left, #FFC593, #BC7198, #5A77FF);
+            position: absolute;
+            bottom: 0;
+        }
     }
     &::before {
         content: "";
