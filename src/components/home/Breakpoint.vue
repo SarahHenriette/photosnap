@@ -1,7 +1,7 @@
 <template>
     <div class="breakpoint">
         <slot name="iconBreakpoint"></slot>
-        <div class="breakpoint--text">
+        <div role="paragraph" class="breakpoint--text">
             <h3 class="breakpoint--text_nameBreakpoint">{{ nameBreakpoint }}</h3>
             <p>{{ text }}</p>
         </div>

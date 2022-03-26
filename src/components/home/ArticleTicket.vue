@@ -1,5 +1,5 @@
 <template>
-    <div class="articleTicket" :class="classNameArticleTicket">
+    <article class="articleTicket" :class="classNameArticleTicket">
         <div class="articleTicket--text">
             <div class="articleTicket--text_contain">
                 <h2 class="h2-large"><slot name="title"></slot></h2>
@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="articleTicket--image" :class="classNameImage"></div>
-    </div>
+    </article>
 </template>
 
 
