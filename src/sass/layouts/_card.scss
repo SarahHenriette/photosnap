@@ -29,11 +29,33 @@
         background-color: $pureBlack;
         color: $pureWhite;
         margin-top: 50px;
-        transition: background-color ease-in-out .2s, color ease-in-out .2s;
+        // transition: background-color ease-in-out .2s, color ease-in-out .2s;
         &:hover {
-            background-color: $lightGrey;
-            color: $pureBlack;
+            // background-color: $lightGrey;
+            // color: $pureBlack;
+            &::after {
+                content: "";
+                background-color: $lightGrey;
+                transform-origin: left;
+                color: $pureWhite;
+                animation: hoverBtn .3s ease-out forwards;
+                top: 0;
+                height: 100%;
+            };
+            &::before {
+                content: "PICK PLAN";
+                z-index: 10;
+                position: absolute;
+                color: $pureBlack;
+            }
+            @keyframes hoverBtn {
+                0% { transform: scaleX(0);}
+                100% { transform: scaleX(1);}
+            }
+          
         }
+        
+        
         @include mobile-only {
             width: 220px;
         }
@@ -66,11 +88,11 @@
     .card--button {
         background-color: $pureWhite;
         color: $pureBlack;
-        transition: background-color ease-in-out .2s, color ease-in-out .2s;
-        &:hover {
-            background-color: $lightGrey;
-            color: $pureBlack;
-        }
+        // transition: background-color ease-in-out .2s, color ease-in-out .2s;
+        // &:hover {
+        //     background-color: $lightGrey;
+        //     color: $pureBlack;
+        // }
     }
 }
 
