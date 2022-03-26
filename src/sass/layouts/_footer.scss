@@ -24,9 +24,10 @@
         }
         &_links {
             @include widthHeight(255px, 121px);
-            @include displayFlex(column, space-between, center);
+            @include displayFlex(column, space-between, start);
             position: absolute;
             left: 27%;
+            margin: 0;
             & a {
                 color: $pureWhite!important;
                 &:hover::after {

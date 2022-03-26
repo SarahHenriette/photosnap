@@ -1,7 +1,7 @@
 .breakpoint {
     @include widthHeight(30%, 210px);
     @include displayFlex(column, space-between, center);
-
+    margin-bottom: 8%;
     @include tablet-only {
         @include widthHeight(50%, 210px);
     }
@@ -20,6 +20,7 @@
             text-align: center;
             margin-top: 20px;
             width: 300px;
+            opacity: 0.6;
         }
     }
 }
