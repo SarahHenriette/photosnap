@@ -1,7 +1,7 @@
 <template>
     <section class="breakpoint">
         <slot name="iconBreakpoint"></slot>
-        <div role="contentinfo" class="breakpoint--text">
+        <div :aria-label="nameBreakpoint" class="breakpoint--text">
             <h3 class="breakpoint--text_nameBreakpoint">{{ nameBreakpoint }}</h3>
             <p>{{ text }}</p>
         </div>
