@@ -7,9 +7,27 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    // margin-top: 8%;
+    position: relative;
+    &::before {
+        content : "";
+        width: 6px;
+        height: 100%;
+        background: linear-gradient( #5A77FF, #BC7198, #FFC593);
+        position: absolute;
+        left: 0;
+        @include mobile-only {
+            background: linear-gradient( to left, #5A77FF, #BC7198, #FFC593);
+            top: 0;
+            left: 10%;
+            width: 128px;
+            height: 6px;
+        }
+
+    }
     &--title {
         color: #FFF;
-        margin-left: 8%;
+        margin-left: 2%;
         @include tablet-only {
             width: 40%;
         }

@@ -9,8 +9,9 @@
 </template>
 
 <script>
+
 export default {
-    props: ["title", "paragraph", "price", "period", "className"]
+    props: ["title", "paragraph", "price", "period", "className"],
 }
 
 </script>

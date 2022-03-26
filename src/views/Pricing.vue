@@ -18,14 +18,28 @@
             <Card title="Pro" paragraph="More advanced features available. Recommended for photography veterans and professionals." :price="checked !== true ? '39.00': '390.00'" :period="checked !== true ? 'month' : 'year'" className="card--pro"/>
             <Card title="Business" paragraph="Additional features available such as more detailed metrics. Recommended for business owners." :price="checked !== true ? '99.00': '990.00'" :period="checked !== true ? 'month' : 'year'" className="card--normal"/>
         </div>
+        <div class="pricing--cardsTablet">
+            <CardTablet title="Basic" paragraph="Includes basic usage of our platform. Recommended for new and aspiring photographers." :price="checked !== true ? '19.00': '190.00'" :period="checked !== true ? 'month' : 'year'" className="cardTablet--normal"/>
+            <CardTablet title="Pro" paragraph="More advanced features available. Recommended for photography veterans and professionals." :price="checked !== true ? '39.00': '390.00'" :period="checked !== true ? 'month' : 'year'" className="cardTablet--pro"/>
+            <CardTablet title="Business" paragraph="Additional features available such as more detailed metrics. Recommended for business owners." :price="checked !== true ? '99.00': '990.00'" :period="checked !== true ? 'month' : 'year'" className="cardTablet--normal"/>
+        </div>
+        <h2 class="h2-large pricing--title">Compare</h2>
+        <TableCompare/>
+        <TableCompareMobile/>
         <BannerFooter/>
+
     </div>
 </template>
 
 <script>
     import ArticleTicket from "./../components/home/ArticleTicket"
     import Card from "./../components/Card"
-    import BannerFooter from "./../components/BannerFooter.vue"
+    import CardTablet from "./../components/CardTablet"
+
+    import TableCompare from "./../components/TableCompare"
+    import TableCompareMobile from "./../components/TableCompareMobile"
+    
+    import BannerFooter from "./../components/BannerFooter"
 
     export default {
         name: 'Home',
@@ -37,7 +51,10 @@
         components: {
             ArticleTicket,
             Card,
-            BannerFooter
+            BannerFooter,
+            TableCompare,
+            CardTablet,
+            TableCompareMobile
         }
     }
 </script>
